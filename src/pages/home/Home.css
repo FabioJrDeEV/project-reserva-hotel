@@ -1,0 +1,65 @@
+.background-banner {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/img/banner/banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-control {
+  border: none;
+  color: #757575;
+  background-color: #f4f4f4;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.form-select {
+  border: none;
+  color: #757575;
+  background-color: #f4f4f4;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.bg-color-orange {
+  background-color: #FF6600;
+}
+
+.btn-orange {
+  background-color: #FF6600;
+}
+
+.btn-orange:hover {
+  background-color: #d15502;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.bottom-0{
+  bottom: 0;
+}
+
+.btn-orange-outline {
+  color: #FF6600;
+  background-color: transparent;
+  outline: 2px solid #FF6600;
+  box-shadow: none;
+  border-radius: 0px;
+  font-size: 16px;
+  transition: 0.7s;
+}
+
+.btn-orange-outline:hover{
+  color: #fff;
+  background-color: #FF6600;
+  border-radius: 0px;
+  outline: none;
+}
+
+.bg-color-roxo{
+  background-color: rgb(76, 21, 128);
+}
