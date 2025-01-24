@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
 import Header from "../../components/header/Header";
 import Hotel1 from "../../assets/img/hoteis/hotel1.jpg";
+import Piscina from "../../assets/img/diferenciais/piscina.jpg";
+import Campo from "../../assets/img/diferenciais/campo.jpg";
+import Camera from "../../assets/img/diferenciais/camera.jpg";
+import Quarto01 from "../../assets/img/banner/banner.jpg";
+import Quarto02 from "../../assets/img/quartos/quarto02.jpg";
+import Quarto03 from "../../assets/img/quartos/quarto03.jpg";
 import "./Home.css";
 
 function Home() {
@@ -80,6 +86,7 @@ function Home() {
           </div>
         </div>
       </main>
+
       <section className="w-100 pb-5 pt-lg-4 pb-lg-5">
         <div className="container pt-5 pb-2 pt-lg-5 pb-lg-0">
           <h1 className="fs-4 text-center text-lg-start mb-5 fw-bold">
@@ -163,13 +170,14 @@ function Home() {
           </div>
           <div className="row">
             <div className="col-12 d-flex justify-content-center">
-              <Link to="#" className="btn btn-orange-outline">
+              <Link to="#" className="btn btn-orange-outline ps-4 pe-4">
                 Visualizar todos
               </Link>
             </div>
           </div>
         </div>
       </section>
+
       <section className="w-100 pb-5 pb-lg-5">
         <div className="container">
           <div className="w-100 title mb-5 mb-md-5 mb-lg-5 pt-lg-4 pb-lg-0">
@@ -193,7 +201,12 @@ function Home() {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Quisque ac nisi at diam maximus tincidunt at vel magna.
                   </p>
-                  <Link to='#' className="w-100 rounded-0 btn btn-orange text-light">Verificar disponibilidade</Link>
+                  <Link
+                    to="#"
+                    className="w-100 rounded-0 btn btn-orange text-light"
+                  >
+                    Verificar disponibilidade
+                  </Link>
                 </div>
               </div>
             </div>
@@ -238,11 +251,137 @@ function Home() {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Quisque ac nisi at diam maximus tincidunt at vel magna.
                   </p>
-                  <Link to='#' className="w-100 rounded-0 btn btn-orange text-light">Verificar disponibilidade</Link>
+                  <Link
+                    to="#"
+                    className="w-100 rounded-0 btn btn-orange text-light"
+                  >
+                    Verificar disponibilidade
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
+          <div className="row">
+            <div className="col-12 d-flex justify-content-center">
+              <Link to="#" className="btn btn-orange-outline ps-4 pe-4">
+                Visualizar todos
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-100">
+        <div className="container">
+          <div className="w-100 title mb-4 mb-md-4 mb-lg-5 pt-lg-4 pb-lg-0">
+            <h1 className="fw-bold text-center fs-4 text-lg-start mb-5">
+              Veja alguns dos nossos diferenciais
+            </h1>
+            <div className="row">
+              <div className="col-12">
+                <div className="row">
+                  <div className="col-12 col-md-12 col-lg-4 mb-4">
+                    <div className="card">
+                      <img
+                        src={Piscina}
+                        alt="Piscina Hotel"
+                        className="card-img-top"
+                      />
+                      <div className="card-body">
+                        <div className="card-title">Piscina</div>
+                        <p className="card-text text-muted">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Quisque ac nisi at diam maximus tincidunt at vel
+                          magna.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="col-12 col-md-12 col-lg-4 mb-4">
+                    <div className="card">
+                      <img
+                        src={Campo}
+                        alt="Campo Hotel"
+                        className="card-img-top"
+                      />
+                      <div className="card-body">
+                        <div className="card-title">Campo de Futebol</div>
+                        <p className="card-text text-muted">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Quisque ac nisi at diam maximus tincidunt at vel
+                          magna.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="col-12 col-md-12 col-lg-4 mb-4">
+                    <div className="card">
+                      <img
+                        src={Camera}
+                        alt="Camera Hotel"
+                        className="card-img-top"
+                      />
+                      <div className="card-body">
+                        <div className="card-title">Camera de Segurança</div>
+                        <p className="card-text text-muted">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Quisque ac nisi at diam maximus tincidunt at vel
+                          magna.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-100 pb-4 pb-md-4 pt-lg-4 pb-lg-4">
+        <div className="container pt-5 pb-2 pt-lg-4 pb-lg-5">
+          <h1 className="fs-4 text-center text-lg-start mb-5 fw-bold">
+            Conheça nossos quartos aconchegantes
+          </h1>
+        </div>
+        <div id="carouselControl" className="carousel slide">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img src={Quarto01} className="d-block w-100" alt="Quarto 01" />
+            </div>
+            <div className="carousel-item">
+              <img src={Quarto02} className="d-block w-100" alt="Quarto 02" />
+            </div>
+            <div className="carousel-item">
+              <img src={Quarto03} className="d-block w-100" alt="Quarto 03" />
+            </div>
+          </div>
+          <button
+            className="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselControl"
+            data-bs-slide="prev"
+          >
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button
+            className="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselControl"
+            data-bs-slide="next"
+          >
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Next</span>
+          </button>
         </div>
       </section>
     </div>
