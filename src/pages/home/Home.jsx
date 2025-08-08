@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import Header from "../../components/header/Header";
 import Hotel1 from "../../assets/img/hoteis/hotel1.jpg";
 import Piscina from "../../assets/img/diferenciais/piscina.jpg";
@@ -10,6 +11,8 @@ import Quarto03 from "../../assets/img/quartos/quarto03.jpg";
 import "./Home.css";
 
 function Home() {
+  const [periodo, setPeriodo] = useState("Periodo");
+
   return (
     <div>
       <Header />
@@ -61,10 +64,10 @@ function Home() {
                       className="form-select rounded-0"
                       id="periodo"
                       aria-label="Selecione o periodo"
+                      value={periodo}
+                      onChange={(e) => setPeriodo(e.target.value)}
                     >
-                      <option value="" selected>
-                        Selecione o perido
-                      </option>
+                      <option value="">Selecione o perido</option>
                       <option value="manha">Manhã</option>
                       <option value="tarde">Tarde</option>
                       <option value="noite">Noite</option>
@@ -340,50 +343,181 @@ function Home() {
         </div>
       </section>
 
-      <section className="w-100 pb-4 pb-md-4 pt-lg-4 pb-lg-4">
-        <div className="container pt-5 pb-2 pt-lg-4 pb-lg-5">
-          <h1 className="fs-4 text-center text-lg-start mb-5 fw-bold">
+      <section className="w-100 pb-4 pb-md-4 pt-lg-3 pb-lg-4">
+        <div className="container pt-2 pb-2 pt-lg-4 pb-lg-5">
+          <h1 className="fs-4 text-center text-lg-start mb-3 fw-bold">
             Conheça nossos quartos aconchegantes
           </h1>
-        </div>
-        <div id="carouselControl" className="carousel slide">
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img src={Quarto01} className="d-block w-100" alt="Quarto 01" />
+          <div id="carouselControl" className="carousel slide">
+            <div className="carousel-inner rounded-1">
+              <div className="carousel-item active">
+                <img src={Quarto01} className="d-block w-100" alt="Quarto 01" />
+              </div>
+              <div className="carousel-item">
+                <img src={Quarto02} className="d-block w-100" alt="Quarto 02" />
+              </div>
+              <div className="carousel-item">
+                <img src={Quarto03} className="d-block w-100" alt="Quarto 03" />
+              </div>
             </div>
-            <div className="carousel-item">
-              <img src={Quarto02} className="d-block w-100" alt="Quarto 02" />
-            </div>
-            <div className="carousel-item">
-              <img src={Quarto03} className="d-block w-100" alt="Quarto 03" />
-            </div>
+            <button
+              className="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselControl"
+              data-bs-slide="prev"
+            >
+              <span
+                className="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselControl"
+              data-bs-slide="next"
+            >
+              <span
+                className="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Next</span>
+            </button>
           </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselControl"
-            data-bs-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselControl"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
-          </button>
         </div>
       </section>
+
+      <section className="w-100">
+        <div className="container">
+          <h1 className="fs-4 text-center text-lg-start pb-1 fw-bold">
+            Avaliação dos nossos clientes
+          </h1>
+          <div className="line-orange m-auto"></div>
+          <div className="row mt-3">
+            <div className="col-12 col-md-12 col-lg-4 mb-4 mb-md-4">
+              <div className="card shadow border-0 p-2">
+                <div className="card-body">
+                  <div className="w-100 mb-3">
+                    <h4 className="fs-5">Fábio Junior</h4>
+                    <span className="text-warning me-1">
+                      <i className="bi bi-star-fill"></i>
+                    </span>
+                    <span className="text-warning me-1">
+                      <i className="bi bi-star-fill"></i>
+                    </span>
+                    <span className="text-warning me-1">
+                      <i className="bi bi-star-fill"></i>
+                    </span>
+                    <span className="text-warning me-1">
+                      <i className="bi bi-star-fill"></i>
+                    </span>
+                    <span className="text-warning">
+                      <i className="bi bi-star-fill"></i>
+                    </span>
+                    <p className="text-muted fs-6 mb-0 mt-2">
+                      Contrary to popular belief, Lorem Ipsum is not simply
+                      random text.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-12 col-lg-4 mb-4 mb-md-4">
+              <div className="card shadow border-0 p-2">
+                <div className="card-body">
+                  <div className="w-100 mb-3">
+                    <h4 className="fs-5">Wesley Bruno</h4>
+                    <span className="text-warning me-1">
+                      <i className="bi bi-star-fill"></i>
+                    </span>
+                    <span className="text-warning me-1">
+                      <i className="bi bi-star-fill"></i>
+                    </span>
+                    <span className="text-warning me-1">
+                      <i className="bi bi-star-fill"></i>
+                    </span>
+                    <span className="text-warning me-1">
+                      <i className="bi bi-star-fill"></i>
+                    </span>
+                    <span className="text-warning">
+                      <i className="bi bi-star-fill"></i>
+                    </span>
+                    <p className="text-muted fs-6 mb-0 mt-2">
+                      Contrary to popular belief, Lorem Ipsum is not simply
+                      random text.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-md-12 col-lg-4 mb-4 mb-md-4">
+              <div className="card shadow border-0 p-2">
+                <div className="card-body">
+                  <div className="w-100 mb-3">
+                    <h4 className="fs-5">Carlos Silva</h4>
+                    <span className="text-warning me-1">
+                      <i className="bi bi-star-fill"></i>
+                    </span>
+                    <span className="text-warning me-1">
+                      <i className="bi bi-star-fill"></i>
+                    </span>
+                    <span className="text-warning me-1">
+                      <i className="bi bi-star-fill"></i>
+                    </span>
+                    <span className="text-warning me-1">
+                      <i className="bi bi-star-fill"></i>
+                    </span>
+                    <span className="text-warning">
+                      <i className="bi bi-star-fill"></i>
+                    </span>
+                    <p className="text-muted fs-6 mb-0 mt-2">
+                      Contrary to popular belief, Lorem Ipsum is not simply
+                      random text.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer className="w-100 bg-light">
+        <div className="container pt-5 pb-4">
+          <div className="row">
+            <div className="col-12 col-lg-4 mb-4 mb-lg-0">
+              <h5 className="mb-lg-3 text-uppercase">Reserve Hotel</h5>
+              <p className="m-0 text-muted">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+            </div>
+
+            <div className="col-12 col-lg-4 mb-4 mb-lg-0">
+              <h5 className="mb-lg-3">Minha Conta</h5>
+              <div className="d-flex flex-column">
+                <Link to="/" className="m-0 text-muted text-decoration-none">
+                  Minhas viagens
+                </Link>
+                <Link className="m-0 text-muted text-decoration-none">
+                  Meu perfil
+                </Link>
+              </div>
+            </div>
+
+            <div className="col-12 col-lg-4">
+              <h5 className="mb-lg-3">Informações Adicionais</h5>
+              <p className="m-0 text-muted">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
