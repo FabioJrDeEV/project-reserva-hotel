@@ -1,0 +1,13 @@
+.line-width {
+  width: 100px;
+  border: 1px solid #ff6600;
+}
+
+@media screen and (max-width: 992px) {
+  .max-width {
+    background-color: #f8f9fa !important;
+  }
+  .navbar .nav-link.login {
+    color: black !important;
+  }
+}

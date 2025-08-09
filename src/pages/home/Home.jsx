@@ -112,7 +112,7 @@ function Home() {
                     Quisque ac nisi at diam maximus tincidunt at vel magna.
                   </p>
                   <Link
-                    to="#"
+                    to="/disponibilidade"
                     className="btn btn-orange w-100 rounded-0 text-light"
                   >
                     Verificar disponibilidade
@@ -137,7 +137,7 @@ function Home() {
                     Quisque ac nisi at diam maximus tincidunt at vel magna.
                   </p>
                   <Link
-                    to="#"
+                    to="/disponibilidade"
                     className="btn btn-orange w-100 rounded-0 text-light"
                   >
                     Verificar disponibilidade
@@ -162,7 +162,7 @@ function Home() {
                     Quisque ac nisi at diam maximus tincidunt at vel magna.
                   </p>
                   <Link
-                    to="#"
+                    to="/disponibilidade"
                     className="btn btn-orange w-100 rounded-0 text-light"
                   >
                     Verificar disponibilidade
@@ -205,7 +205,7 @@ function Home() {
                     Quisque ac nisi at diam maximus tincidunt at vel magna.
                   </p>
                   <Link
-                    to="#"
+                    to="/disponibilidade"
                     className="w-100 rounded-0 btn btn-orange text-light"
                   >
                     Verificar disponibilidade
@@ -230,7 +230,7 @@ function Home() {
                     Quisque ac nisi at diam maximus tincidunt at vel magna.
                   </p>
                   <Link
-                    to="#"
+                    to="/disponibilidade"
                     className="w-100 rounded-0 btn btn-orange text-light"
                   >
                     Verificar disponibilidade
@@ -255,7 +255,7 @@ function Home() {
                     Quisque ac nisi at diam maximus tincidunt at vel magna.
                   </p>
                   <Link
-                    to="#"
+                    to="/disponibilidade"
                     className="w-100 rounded-0 btn btn-orange text-light"
                   >
                     Verificar disponibilidade
@@ -345,7 +345,7 @@ function Home() {
 
       <section className="w-100 pb-4 pb-md-4 pt-lg-3 pb-lg-4">
         <div className="container pt-2 pb-2 pt-lg-4 pb-lg-5">
-          <h1 className="fs-4 text-center text-lg-start mb-3 fw-bold">
+          <h1 className="fs-4 text-center text-lg-start mb-2 mb-lg-4 fw-bold">
             Conheça nossos quartos aconchegantes
           </h1>
           <div id="carouselControl" className="carousel slide">
@@ -516,6 +516,9 @@ function Home() {
               </p>
             </div>
           </div>
+        </div>
+        <div className="w-100 bg-color-orange text-center p-2 text-light">
+          <span>&copy; Todos os direitos reservados</span>
         </div>
       </footer>
     </div>
