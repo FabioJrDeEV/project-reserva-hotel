@@ -3,6 +3,10 @@
   border: 1px solid #ff6600;
 }
 
+.btn-orange {
+  background-color: #ff6600;
+}
+
 @media screen and (max-width: 992px) {
   .max-width {
     background-color: #f8f9fa !important;
