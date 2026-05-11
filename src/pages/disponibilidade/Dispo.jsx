@@ -8,7 +8,7 @@ function Dispo() {
     <div className="w-100">
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container">
-          <h1 className="navbar-brand m-0">Reserve Hotel</h1>
+          <Link to="/" className="navbar-brand m-0">Reserve Hotel</Link>
           <button
             className="navbar-toggler"
             type="button"
