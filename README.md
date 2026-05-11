@@ -18,6 +18,7 @@ Navegação fluida entre componentes
 Apesar da interface já estar funcional, algumas funcionalidades ainda estão em fase de implementação, como o envio real das reservas e integração com backend.
 
 🚀 Tecnologias Utilizadas
+
 ⚛️ React
 🎨 Bootstrap
 🧩 React Hooks
@@ -32,7 +33,9 @@ Apesar da interface já estar funcional, algumas funcionalidades ainda estão em
  Modal/Formulário de disponibilidade
  Componentização com React
  Layout moderno com Bootstrap
+
 🛠️ Funcionalidades Futuras
+
  Integração com backend
  Sistema real de reservas
  Autenticação de usuários
